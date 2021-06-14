@@ -9,7 +9,7 @@ print(message)
 
 # New input message
 prompt = "\nTell me something, and I will repeat it back to you:"
-prompt += "\nEnter 'quit' to end the program "
+prompt += "\nEnter 'quit' to end the program. "
 
 # while loop -- user input quit
 message = ""
