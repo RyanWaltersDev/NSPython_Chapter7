@@ -13,6 +13,7 @@ ticket_list = []
 while active:
     age = input(prompt)
     ticket = 0
+
     # integer input
     if age.isnumeric() == True:
         age = int(age)
@@ -30,7 +31,7 @@ while active:
             print(f"\tThe ticket price for {age} year olds is $15!")
             ticket += 15
             ticket += ticket * 0.07
-            ticket_list.append(ticket)\
+            ticket_list.append(ticket)
         # 65 and up
         elif age >= 65 and age < 120:
             print(f"\tThe price for our senior citizens is $12!")
@@ -40,6 +41,7 @@ while active:
         # Invalid age
         else:
             print("\tPlease enter a valid age.")
+
     # string input
     else:
         # quit break
@@ -55,11 +57,13 @@ while active:
         else:
             print("\tPlease enter a valid response.")
             continue
+
     # calculate ticket total
     total = 0
     for tickets in range(0, len(ticket_list)):
         total = total + ticket_list[tickets]
     print(f"\nYour current total is ${total}.")
+    
     # ask to continue
     more_ticket = input("Would you like to buy more tickets? [Y/N] ")
     if more_ticket.title() == 'Y' or more_ticket.title() == 'Yes':
