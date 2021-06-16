@@ -30,7 +30,7 @@ while active:
             print(f"\tThe ticket price for {age} year olds is $15!")
             ticket += 15
             ticket += ticket * 0.07
-            ticket_list.append(ticket)\
+            ticket_list.append(ticket)
         # 65 and up
         elif age >= 65 and age < 120:
             print(f"\tThe price for our senior citizens is $12!")
