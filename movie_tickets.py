@@ -53,7 +53,7 @@ while active:
             ticket_list.append(ticket)
         # invalid response
         else:
-            print("\tlease enter a valid response.")
+            print("\tPlease enter a valid response.")
             continue
     # calculate ticket total
     total = 0
